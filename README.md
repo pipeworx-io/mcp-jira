@@ -2,16 +2,16 @@
 
 Jira MCP Pack
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
 | `jira_search` | Search Jira issues using JQL queries. Returns issue keys, summaries, status, assignee, and priority. Use to find tasks by project, status, assignee, or custom criteria. |
-| `jira_get_issue` | Get full details for a Jira issue by key (e.g., \'PROJ-123\'). Returns description, status, assignee, priority, comments, attachments, and linked issues. |
+| `jira_get_issue` | Get full details for a Jira issue by key (e.g., 'PROJ-123'). Returns description, status, assignee, priority, comments, attachments, and linked issues. |
 | `jira_list_projects` | List all accessible Jira projects. Returns project keys, names, descriptions, and types. Use before searching to discover available projects. |
-| `jira_get_project` | Get details for a specific Jira project by key (e.g., \'PROJ\') or ID. Returns name, description, lead, issue types, and custom fields. |
+| `jira_get_project` | Get details for a specific Jira project by key (e.g., 'PROJ') or ID. Returns name, description, lead, issue types, and custom fields. |
 
 ## Quick Start
 
@@ -27,7 +27,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -51,7 +51,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
