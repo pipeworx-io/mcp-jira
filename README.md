@@ -80,3 +80,7 @@ The gateway picks the right tool and fills the arguments automatically.
 ## License
 
 MIT
+
+## No MCP client? Call it over HTTP
+
+This pack runs against a connected jira account, so it needs a Pipeworx key: sign in at https://pipeworx.io/account, connect jira, then call `POST https://gateway.pipeworx.io/v1/tools/jira_search` with `Authorization: Bearer <your Pipeworx key>`. Inspect any tool: `GET https://gateway.pipeworx.io/v1/tools/jira_search`. Find one: `POST https://gateway.pipeworx.io/v1/tools/search_packs` with `{"query":"..."}`.
