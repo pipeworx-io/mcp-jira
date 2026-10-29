@@ -1,0 +1,70 @@
+[
+  {
+    "name": "jira_search",
+    "description": "Search Jira issues using JQL queries. Returns issue keys, summaries, status, assignee, and priority. Use to find tasks by project, status, assignee, or custom criteria.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "jql": {
+          "type": "string",
+          "description": "JQL query (e.g., \"project = PROJ AND status = Open ORDER BY created DESC\")"
+        },
+        "max_results": {
+          "type": "number",
+          "description": "Maximum results to return (default 20, max 100)"
+        },
+        "fields": {
+          "type": "string",
+          "description": "Comma-separated field names to include (e.g., \"summary,status,assignee\")"
+        }
+      },
+      "required": [
+        "jql"
+      ]
+    }
+  },
+  {
+    "name": "jira_get_issue",
+    "description": "Get full details for a Jira issue by key (e.g., 'PROJ-123'). Returns description, status, assignee, priority, comments, attachments, and linked issues.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "issue_key": {
+          "type": "string",
+          "description": "Issue key (e.g., \"PROJ-123\")"
+        },
+        "fields": {
+          "type": "string",
+          "description": "Comma-separated field names to include (optional)"
+        }
+      },
+      "required": [
+        "issue_key"
+      ]
+    }
+  },
+  {
+    "name": "jira_list_projects",
+    "description": "List all accessible Jira projects. Returns project keys, names, descriptions, and types. Use before searching to discover available projects.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "jira_get_project",
+    "description": "Get details for a specific Jira project by key (e.g., 'PROJ') or ID. Returns name, description, lead, issue types, and custom fields.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "project_key": {
+          "type": "string",
+          "description": "Project key (e.g., \"PROJ\") or numeric project ID"
+        }
+      },
+      "required": [
+        "project_key"
+      ]
+    }
+  }
+]

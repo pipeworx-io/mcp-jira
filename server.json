@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/jira",
   "title": "Jira",
   "description": "Jira MCP Pack",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/jira",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-jira",
